@@ -1,53 +1,114 @@
-# Food Ordering Website
-As the name says it all, it a simple full stack project which is used for ordering food from your favourite restaurant. It is a user friendly and responsive website. 
+[npm-image]: https://img.shields.io/npm/v/mysql2.svg
+[npm-url]: https://npmjs.com/package/mysql2
+[node-version-image]: https://img.shields.io/node/v/mysql2.svg
+[node-version-url]: https://nodejs.org/en/download
+[downloads-image]: https://img.shields.io/npm/dm/mysql2.svg
+[downloads-url]: https://npmjs.com/package/mysql2
+[license-url]: https://github.com/sidorares/node-mysql2/blob/master/License
+[license-image]: https://img.shields.io/npm/l/mysql2.svg?maxAge=2592000
+[node-mysql]: https://github.com/mysqljs/mysql
+[mysqljs]: https://github.com/mysqljs
+[mysql-native]: https://github.com/sidorares/nodejs-mysql-native
+[sidorares]: https://github.com/sidorares
+[TooTallNate]: https://gist.github.com/TooTallNate
+[starttls.js]: https://gist.github.com/TooTallNate/848444
+[node-mariasql]: https://github.com/mscdex/node-mariasql
+[contributors]: https://github.com/sidorares/node-mysql2/graphs/contributors
+[contributing]: https://github.com/sidorares/node-mysql2/blob/master/Contributing.md
+[docs-base]: https://sidorares.github.io/node-mysql2/docs
+[docs-base-zh-CN]: https://sidorares.github.io/node-mysql2/zh-CN/docs
+[docs-base-pt-BR]: https://sidorares.github.io/node-mysql2/pt-BR/docs
+[docs-prepared-statements]: https://sidorares.github.io/node-mysql2/docs/documentation/prepared-statements
+[docs-mysql-server]: https://sidorares.github.io/node-mysql2/docs/documentation/mysql-server
+[docs-promise-wrapper]: https://sidorares.github.io/node-mysql2/docs/documentation/promise-wrapper
+[docs-authentication-switch]: https://sidorares.github.io/node-mysql2/docs/documentation/authentication-switch
+[docs-streams]: https://sidorares.github.io/node-mysql2/docs/documentation/extras
+[docs-typescript-docs]: https://sidorares.github.io/node-mysql2/docs/documentation/typescript-examples
+[docs-qs-pooling]: https://sidorares.github.io/node-mysql2/docs#using-connection-pools
+[docs-qs-first-query]: https://sidorares.github.io/node-mysql2/docs#first-query
+[docs-qs-using-prepared-statements]: https://sidorares.github.io/node-mysql2/docs#using-prepared-statements
+[docs-examples]: https://sidorares.github.io/node-mysql2/docs/examples
+[docs-faq]: https://sidorares.github.io/node-mysql2/docs/faq
+[docs-documentation]: https://sidorares.github.io/node-mysql2/docs/documentation
+[docs-contributing]: https://sidorares.github.io/node-mysql2/docs/contributing/website
+[coverage]: https://img.shields.io/codecov/c/github/sidorares/node-mysql2
+[coverage-url]: https://app.codecov.io/github/sidorares/node-mysql2
+[ci-url]: https://github.com/sidorares/node-mysql2/actions/workflows/ci-coverage.yml?query=branch%3Amaster
+[ci-image]: https://img.shields.io/github/actions/workflow/status/sidorares/node-mysql2/ci-coverage.yml?event=push&style=flat&label=CI&branch=master
 
-## Features :
-- The project has two interface i.e. an user interface and an admin interface.
-- At user-end he/she can ony order food and set the quantity as per there requirment.
-- At user-end he/she can also view there profile details and order history.
-- At user-end he/she can change their basic contact details and as well as there password. 
-- At admins-end he/she can perform two task : 
-    - Add new food to the food menu.
-    - Change the price of cuisine as per inflation rate.
-    - View and dispatch order of the customers.
-- Admin can also verify the working of the website from his own end.
-- Use cookies for login into the account.
+# MySQL2
 
-## Build With :
-<ul>
-    <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
-    <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
-    <li><a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
-    <li><a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank">Bootstrap</a></li>
-    <li><a href="https://expressjs.com/" target="_blank">ExpressJS</a></li>
-    <li><a href="https://www.w3schools.com/mysql/default.asp" target="_blank">MySQL</a></li>
-</ul>
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][downloads-url]
+[![Node.js Version][node-version-image]][node-version-url]
+[![GitHub Workflow Status (with event)][ci-image]][ci-url]
+[![Codecov][coverage]][coverage-url]
+[![License][license-image]][license-url]
 
-## Install and Run :
-- Clone the repository or download the zip folder.
-- Extract the zip folder.
-- Import the data from the ``` FoodOrderingWebsite.sql ``` file to your ``` MySQL``` Database.
-- Install NodeJS in your system.
-- Go to the folder where you have extracted or cloned the project.
-- Open command prompt or terminal having the same location where your project is.
-- Type ``` npm install ``` in your command prompt or terminal.
-- Now to run the project on your server type ``` npm start ``` .
+[English][docs-base] | [简体中文][docs-base-zh-CN] | [Português (BR)][docs-base-pt-BR]
 
-## Screenshot :
-Here are some of the screenshot of Food Ordering Website.
+> MySQL client for Node.js with focus on performance. Supports prepared statements, non-utf8 encodings, binary log protocol, compression, ssl [much more][docs-documentation].
 
-1. Landing Page :<br><br> <img src="screenshot/Landing Page.png"><br><br>
-2. SignUp  Page :<br><br> <img src="screenshot/Sign Up Page.png"><br><br>
-3. SignIn Page :<br><br> <img src="screenshot/Sign In Page.png"><br><br>
-4. Home Page : <br><br> <img src="screenshot/Homepage.png"><br><br>
-5. Menu List : <br><br> <img src="screenshot/Menu Cart.png"><br><br>
-6. Cart Page : <br><br> <img src="screenshot/My Cart Page.png"><br><br>
-7. Confirmation Page :<br><br> <img src="screenshot/Order Confirmation Page.png"><br><br>
-8. Details and Order History Page :<br><br> <img src="screenshot/Details and Order History Page.png"><br><br>
-9. Settings Page :<br><br> <img src="screenshot/Settings Page.png"><br><br>
-10. Sign Out Option :<br><br> <img src="screenshot/Sign Out.png"><br><br>
-11. Admin Sign In Page : <br><br> <img src="screenshot/Admin Login Page.png"><br><br>
-12. Admin Welcome Page :<br><br> <img src="screenshot/Admin Welcome Page.png"><br><br>
-13. Admin Adding Food Page :<br><br> <img src="screenshot/Admin Adding Food Page.png"><br><br>
-14. Changing Price of Cuisine :<br><br> <img src="screenshot/Changing Price of Cuisine.png"><br><br>
-14. Admin Order View & Dispatching Page :<br><br> <img src="screenshot/Admin Viewing and Dispatching Order Page.png"><br><br>
+**Table of Contents**
+
+- [History and Why MySQL2](#history-and-why-mysql2)
+- [Installation](#installation)
+- [Documentation](#documentation)
+- [Acknowledgements](#acknowledgements)
+- [Contributing](#contributing)
+
+## History and Why MySQL2
+
+MySQL2 project is a continuation of [MySQL-Native][mysql-native]. Protocol parser code was rewritten from scratch and api changed to match popular [Node MySQL][node-mysql]. MySQL2 team is working together with [Node MySQL][node-mysql] team to factor out shared code and move it under [mysqljs][mysqljs] organization.
+
+MySQL2 is mostly API compatible with [Node MySQL][node-mysql] and supports majority of features. MySQL2 also offers these additional features:
+
+- Faster / Better Performance
+- [Prepared Statements][docs-prepared-statements]
+- MySQL Binary Log Protocol
+- [MySQL Server][docs-mysql-server]
+- Extended support for Encoding and Collation
+- [Promise Wrapper][docs-promise-wrapper]
+- Compression
+- SSL and [Authentication Switch][docs-authentication-switch]
+- [Custom Streams][docs-streams]
+- [Pooling][docs-qs-pooling]
+
+## Installation
+
+MySQL2 is free from native bindings and can be installed on Linux, Mac OS or Windows without any issues.
+
+```bash
+npm install --save mysql2
+```
+
+If you are using TypeScript, you will need to install `@types/node`.
+
+```bash
+npm install --save-dev @types/node
+```
+
+> For TypeScript documentation and examples, see [here][docs-typescript-docs].
+
+## Documentation
+
+- [Quickstart][docs-base]
+  - [First Query][docs-qs-first-query], [Using Prepared Statements][docs-qs-using-prepared-statements], [Using Connection Pools][docs-qs-pooling] and more.
+- [Documentation][docs-documentation]
+- [Examples][docs-examples]
+- [FAQ][docs-faq]
+
+## Acknowledgements
+
+- Internal protocol is written by [@sidorares][sidorares] [MySQL-Native][mysql-native].
+- Constants, SQL parameters interpolation, Pooling, `ConnectionConfig` class taken from [Node MySQL][node-mysql].
+- SSL upgrade code based on [@TooTallNate][TooTallNate] [code][starttls.js].
+- Secure connection / compressed connection api flags compatible to [MariaSQL][node-mariasql] client.
+- [Contributors][contributors].
+
+## Contributing
+
+Want to improve something in **MySQL2**?
+Please check [Contributing.md][contributing] for detailed instruction on how to get started.
+
+To contribute in **MySQL2 Documentation**, please visit the [Website Contributing Guidelines][docs-contributing] for detailed instruction on how to get started.
